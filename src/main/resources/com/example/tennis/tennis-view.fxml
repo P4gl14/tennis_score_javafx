@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tennis.tennisController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="1000.0">
+         <children>
+            <Button fx:id="backClick" mnemonicParsing="false" onAction="#onBackClick" prefHeight="44.0" prefWidth="160.0" text="BACK">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="resetClick" mnemonicParsing="false" onAction="#onResetClick" prefHeight="44.0" prefWidth="160.0" text="RESET">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+          <HBox alignment="CENTER_LEFT" prefHeight="120.0" prefWidth="960.0">
+              <children>
+                  <Label alignment="CENTER" prefHeight="80.0" prefWidth="300.0" text="GIOCATORE">
+                      <font>
+                          <Font size="36.0" />
+                      </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="80.0" prefWidth="80.0" text="SETS">
+                      <font>
+                          <Font size="36.0" />
+                      </font>
+                      <HBox.margin>
+                          <Insets left="100.0" />
+                      </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="80.0" prefWidth="120.0" text="GAMES">
+                      <font>
+                          <Font size="36.0" />
+                      </font>
+                      <HBox.margin>
+                          <Insets left="80.0" />
+                      </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="370.0" layoutY="25.0" prefHeight="80.0" prefWidth="130.0" text="POINTS">
+                      <font>
+                          <Font size="36.0" />
+                      </font>
+                      <HBox.margin>
+                          <Insets left="80.0" />
+                      </HBox.margin>
+                  </Label>
+              </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+          </HBox>
+        <BorderPane prefHeight="240.0" prefWidth="200.0">
+            <bottom>
+                <HBox alignment="CENTER_LEFT" prefHeight="140.0" prefWidth="960.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="player2" mnemonicParsing="false" onAction="#onPlayer2Click" prefHeight="80.0" prefWidth="300.0" text="Player 2">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Button>
+                        <Label fx:id="player2Sets" alignment="CENTER" prefHeight="80.0" prefWidth="40.0" text="0">
+                            <font>
+                                <Font size="48.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="120.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="player2Games" alignment="CENTER" prefHeight="80.0" prefWidth="80.0" text="0">
+                            <font>
+                                <Font size="48.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="120.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="player2Points" alignment="CENTER" prefHeight="80.0" prefWidth="160.0" text="0">
+                            <font>
+                                <Font size="48.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="85.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <HBox alignment="CENTER_LEFT" prefHeight="140.0" prefWidth="960.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="player1" mnemonicParsing="false" onAction="#onPlayer1Click" prefHeight="80.0" prefWidth="300.0" text="Player 1">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Button>
+                        <Label fx:id="player1Sets" alignment="CENTER" prefHeight="80.0" prefWidth="40.0" text="0">
+                            <font>
+                                <Font size="48.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="120.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="player1Games" alignment="CENTER" layoutX="250.0" layoutY="55.0" prefHeight="80.0" prefWidth="80.0" text="0">
+                            <font>
+                                <Font size="48.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="120.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="player1Points" alignment="CENTER" layoutX="310.0" layoutY="55.0" prefHeight="80.0" prefWidth="160.0" text="0">
+                            <font>
+                                <Font size="48.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="85.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+            </center>
+        </BorderPane>
+    </children>
+</VBox>
